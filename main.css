@@ -3,7 +3,42 @@
     src: url("fonts/Norse-Bold.otf");
 }
 
+:root {
+    box-sizing: border-box;
+
+}
+* {
+    margin: 0;
+    padding:0;
+}
+
 body {
+    display:flex;
+    color:white;
+}
+
+.logo {
+    padding:0 2vw;
+    height:100vh;
+    background-image: url("images/grunge-gdfab58fa3_1920.jpg");
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:20px;
+
+}
+
+.logo>p {
     font-family: "Norse";
-    font-size: 40px;
+    font-size: 120px;
+    color:white;
+}
+.logo>img {
+    height:120px;
+}
+.container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+    padding:2vw;
 }
