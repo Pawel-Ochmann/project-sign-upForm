@@ -35,7 +35,8 @@ const submitButton = document.querySelector('button');
 submitButton.addEventListener('click', ()=> {
 
     inputs.forEach((e)=> {
-        if (!e.valid) {
+        if (!e.checkValidity()) {
+            console.log(e)
             e.classList.add('error')
         }
     })
