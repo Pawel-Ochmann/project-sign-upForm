@@ -21,22 +21,31 @@
                 <label for="firstName">
                   <input type="text" id="firstName" required>
                   <span class="description">first name</span>
-                  <span class="warning">*Type your name!</span>
+                  <span class="warning">*Type your name</span>
                 </label>
-                <label for="lastName">last name      
-                    <input type="text" id="lastName">
+                <label for="lastName">      
+                    <input type="text" id="lastName" required>
+                    <span class="description">last name</span>
+                    <span class="warning">*Type your last name</span>
                 </label>
-                <label for="email">email
-                     <input type="email" id="email">
+                <label for="email">
+                     <input type="text" id="email" required>
+                     <span class="description">email</span>
+                     <span class="warning">*This is not valid email adress</span>
                 </label>
-                <label for="phoneNumber">phone number
-                    <input type="tel" id="phoneNumber">
+                <label for="phoneNumber">
+                    <input type="tel" id="phoneNumber" required>
+                    <span class="description">phone number</span>
+                    <span class="warning">*Type your phone number</span>
                 </label>
-                <label for="password">password
-                   <input type="password" id="password">
+                <label for="password">
+                   <input type="password" id="password" class="error" required>
+                   <span class="description">password</span>
+                   <span class="warning">*Passwords do not match</span>
                 </label>
-                <label for="confirmPassword">confirm password
-                    <input type="password" id="password">
+                <label for="confirmPassword">
+                    <input type="password" id="confirmPassword" class="error" required>
+                    <span class="description">password</span>
                 </label> 
             </fieldset>
             <button type="submit">Create Account</button>
