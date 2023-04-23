@@ -178,7 +178,8 @@ input:focus + .description {
     top:-17px;
 }
 
-input:valid {
+input:valid:not([type=password]), .validPassword {
     border:var(--validBorder);
     box-shadow: 0px 0px 10px  var(--validBorder);
 }
+
